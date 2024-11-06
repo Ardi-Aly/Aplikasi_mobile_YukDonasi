@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_donasi"
+        android:contentDescription="background image" />
+
+    <!-- Overlay or Transparent Background -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF" /> <!-- Adjust the transparency as needed -->
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/makan tai jir"
+        android:contentDescription="logo image" />
+
+    <!-- Sign Up Text -->
+    <TextView
+        android:id="@+id/sign_up_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <!-- Create an account Text -->
+    <TextView
+        android:id="@+id/create_account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Create an account"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- Additional Text below Create Account -->
+    <TextView
+        android:id="@+id/additional_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_account_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Please fill in the details to sign up."
+        android:textSize="12sp"
+        android:textColor="#555555" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/additional_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Email*"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="12dp"
+        android:inputType="textEmailAddress" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_input"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Password*"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="12dp"
+        android:inputType="textPassword" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_input"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#007BFF"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</RelativeLayout>
